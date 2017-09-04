@@ -31,6 +31,7 @@ class DefaultController extends Controller
     {
         $team = new Teams();
 
+
         $form = $this->createFormBuilder($team)
             ->add('id', TextType::class, array('empty_data' => '0', 'required' => false ))
             ->add('name', TextType::class, array('empty_data' => '-', 'required' => false ))
@@ -41,6 +42,7 @@ class DefaultController extends Controller
             ->add('lost', TextType::class, array('empty_data' => '0', 'required' => false ))
             ->add('goals', TextType::class, array('empty_data' => '0', 'required' => false ))
             ->add('goalsagainst', TextType::class, array('empty_data' => '0', 'required' => false ))
+            ->add('goalsdiff', TextType::class, array('empty_data' => '0', 'required' => false ))
             ->add('points', TextType::class, array('empty_data' => '0', 'required' => false ))
             ->add('save', SubmitType::class, array('label' =>'Zapisz'))
             ->getForm();
@@ -124,6 +126,9 @@ class DefaultController extends Controller
 
         echo "<pre>";
         var_dump($records);
+        echo "<hr>";
+        $home = $em->find('1');
+        echo $home->getName();
 
 
         return new Response();
