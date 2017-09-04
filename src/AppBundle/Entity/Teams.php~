@@ -1,0 +1,68 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: adzy
+ * Date: 04.09.2017
+ * Time: 09:46
+ */
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="teams")
+ */
+class Teams
+{
+    /**
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     */
+    protected $id;
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    protected $name;
+    /**
+     * @ORM\Column(type="integer")
+     */
+    protected $matches;
+    /**
+     * @ORM\Column(type="integer")
+     */
+    protected $won;
+    /**
+     * @ORM\Column(type="integer")
+     */
+    protected $otwon;
+    /**
+     * @ORM\Column(type="integer")
+     */
+    protected $otlost;
+    /**
+     * @ORM\Column(type="integer")
+     */
+    protected $lost;
+    /**
+     * @ORM\Column(type="integer")
+     */
+    protected $goals;
+    /**
+     * @ORM\Column(type="integer")
+     */
+    protected $goalsagainst;
+    /**
+     * @ORM\Column(type="integer")
+     */
+    protected $points;
+    /**
+     * @ORM\Column(type="integer")
+     */
+
+
+
+
+
+}
