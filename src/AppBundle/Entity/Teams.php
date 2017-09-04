@@ -56,6 +56,10 @@ class Teams
     /**
      * @ORM\Column(type="integer")
      */
+    protected $goalsdiff;
+    /**
+     * @ORM\Column(type="integer")
+     */
     protected $points;
     /**
      * @ORM\Column(type="integer", default = 0)
@@ -304,5 +308,29 @@ class Teams
     public function getPoints()
     {
         return $this->points;
+    }
+
+    /**
+     * Set goalsdiff
+     *
+     * @param integer $goalsdiff
+     *
+     * @return Teams
+     */
+    public function setGoalsdiff($goalsdiff)
+    {
+        $this->goalsdiff = $goalsdiff;
+
+        return $this;
+    }
+
+    /**
+     * Get goalsdiff
+     *
+     * @return integer
+     */
+    public function getGoalsdiff()
+    {
+        return $this->goalsdiff;
     }
 }

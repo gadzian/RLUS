@@ -84,6 +84,7 @@ class DefaultController extends Controller
             ->add('lost', TextType::class, array('empty_data' => '0', 'required' => false ))
             ->add('goals', TextType::class, array('empty_data' => '0', 'required' => false ))
             ->add('goalsagainst', TextType::class, array('empty_data' => '0', 'required' => false ))
+            ->add('goalsdiff', TextType::class, array('empty_data' => '0', 'required' => false ))
             ->add('points', TextType::class, array('empty_data' => '0', 'required' => false ))
             ->add('save', SubmitType::class, array('label' =>'Aktualizuj'))
             ->add('dalej', SubmitType::class, array('label' => 'Aktualizuj i przejdź do następnego'))
@@ -112,7 +113,21 @@ class DefaultController extends Controller
     }
 
 
+    /**
+     * @Route("/show")
+     */
 
+    public function showAction()
+    {
+        $em = $this->getDoctrine()->getRepository("AppBundle:Teams");
+        $records = $em->findBy(array(), array('points' => 'DESC', 'goals' => 'DESC'));
+
+        echo "<pre>";
+        var_dump($records);
+
+
+        return new Response();
+    }
 
 
 

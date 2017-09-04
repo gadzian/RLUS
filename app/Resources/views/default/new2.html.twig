@@ -76,6 +76,14 @@
 <br><br>
 
 <div align="center">
+    {{ form_label(form.goalsdiff) }}
+    {{ form_errors(form.goalsdiff) }}
+    {{ form_widget(form.goalsdiff, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
+</div>
+
+<br><br>
+
+<div align="center">
     {{ form_label(form.points) }}
     {{ form_errors(form.points) }}
     {{ form_widget(form.points, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
