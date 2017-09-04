@@ -58,7 +58,7 @@ class Teams
      */
     protected $points;
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", default = 0)
      */
 
 

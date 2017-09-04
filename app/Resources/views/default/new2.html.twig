@@ -1,0 +1,91 @@
+{{ form_start(form) }}
+     {{ form_errors(form) }}
+
+<br>
+
+<div align="center">
+    {{ form_label(form.id) }}
+    {{ form_errors(form.id) }}
+    {{ form_widget(form.id, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
+</div>
+
+<br><br>
+
+<div align="center">
+    {{ form_label(form.name) }}
+    {{ form_errors(form.name) }}
+    {{ form_widget(form.name, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
+</div>
+
+<br><br>
+
+<div align="center">
+    {{ form_label(form.matches) }}
+    {{ form_errors(form.matches) }}
+    {{ form_widget(form.matches, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
+</div>
+
+<br><br>
+
+<div align="center">
+    {{ form_label(form.won) }}
+    {{ form_errors(form.won) }}
+    {{ form_widget(form.won, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
+</div>
+
+<br><br>
+
+<div align="center">
+    {{ form_label(form.otwon) }}
+    {{ form_errors(form.otwon) }}
+    {{ form_widget(form.otwon, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
+</div>
+
+<br><br>
+
+<div align="center">
+    {{ form_label(form.otlost) }}
+    {{ form_errors(form.otlost) }}
+    {{ form_widget(form.otlost, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
+</div>
+
+<br><br>
+
+<div align="center">
+    {{ form_label(form.lost) }}
+    {{ form_errors(form.lost) }}
+    {{ form_widget(form.lost, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
+</div>
+
+<br><br>
+
+<div align="center">
+    {{ form_label(form.goals) }}
+    {{ form_errors(form.goals) }}
+    {{ form_widget(form.goals, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
+</div>
+
+<br><br>
+
+<div align="center">
+    {{ form_label(form.goalsagainst) }}
+    {{ form_errors(form.goalsagainst) }}
+    {{ form_widget(form.goalsagainst, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
+</div>
+
+<br><br>
+
+<div align="center">
+    {{ form_label(form.points) }}
+    {{ form_errors(form.points) }}
+    {{ form_widget(form.points, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
+</div>
+
+<br><br>
+
+<div align="center">
+    {{ form_widget(form.save, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
+    {{ form_widget(form.dalej, { 'attr': {'style' : 'width:525px; height:40px'}}) }}
+</div>
+
+{{ form_end(form) }}
