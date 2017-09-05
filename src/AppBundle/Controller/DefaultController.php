@@ -177,8 +177,6 @@ class DefaultController extends Controller
     {
         $em = $this->getDoctrine()->getRepository("AppBundle:Teams");
 
-
-        //$em = $this->getDoctrine()->get
         $match = new Matches();
         $match->setId(1);
         $match->setHomeID(1);
@@ -229,8 +227,40 @@ class DefaultController extends Controller
     }
 
 
+    public function createAll()
+    {
+        $h = array(1, 2, 3, 4, 5, 6, 1, 12, 2, 3, 4, 5, 1, 11, 12,
+            2, 3, 4, 1, 10, 11, 12, 2, 3, 1, 9, 10, 11, 12, 2,
+            1, 8, 9, 10, 11, 12, 1, 7, 8, 9, 10, 11, 1, 6, 7, 8, 9,
+            10, 1, 5, 6, 7, 8, 9, 1, 4, 5, 6, 7, 8, 1, 3, 4, 5, 6, 7);
+        $a = array(12, 11, 10, 9, 8, 7, 11, 10, 9, 8, 7, 6, 10, 9,
+            8, 7, 6, 5, 9, 8, 7, 6, 5, 4, 8, 7, 6, 5, 4, 3, 7,
+            6, 5, 4, 3, 2, 6, 5, 4, 3, 2, 12, 5, 4, 3, 2, 12, 11,
+            4, 3, 2, 12, 11, 10, 3, 2, 12, 11, 10, 9, 2, 12, 11, 10, 9, 8);
 
-    
+
+        $em = $this->getDoctrine()->getRepository("AppBundle:Teams");
+
+        $match = new Matches();
+        $match->setId(1);
+        $match->setHomeID(1);
+        $match->setAwayID(2);
+        $match->setHome($em->find('1')->getName());
+        $match->setAway($em->find('2')->getName());
+        $match->setMatchday(1);
+        $match->setHomeG(3);
+        $match->setAwayG(5);
+        $match->setOt(0);
+
+        $en = $this->getDoctrine()->getManager();
+        $en->persist($match);
+        $en->flush();
+
+
+
+
+    }
+
 
 
 

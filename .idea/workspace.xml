@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08fa759f-e47c-4b49-a893-17cc0c69fdcf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/cleartable.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/new2.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/new2.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Matches.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Matches.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,13 +56,12 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1113">
-              <caret line="232" column="4" lean-forward="false" selection-start-line="232" selection-start-column="4" selection-end-line="232" selection-end-column="4" />
+            <state relative-caret-position="353">
+              <caret line="125" column="66" lean-forward="false" selection-start-line="125" selection-start-column="66" selection-end-line="125" selection-end-column="66" />
               <folding>
                 <element signature="e#40#69#0#PHP" expanded="true" />
                 <element signature="e#586#872#0#PHP" expanded="false" />
                 <element signature="e#923#2558#0#PHP" expanded="false" />
-                <element signature="e#6735#7512#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -231,12 +226,12 @@
       <option name="presentableId" value="Default" />
       <updated>1504509562908</updated>
       <workItem from="1504509564126" duration="12906000" />
-      <workItem from="1504595995790" duration="14127000" />
+      <workItem from="1504595995790" duration="15254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27033000" />
+    <option name="totallyTimeSpent" value="28160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1649" y="45" width="1383" height="834" extended-state="0" />
@@ -320,7 +315,6 @@
             <element signature="e#40#69#0#PHP" expanded="true" />
             <element signature="e#586#872#0#PHP" expanded="false" />
             <element signature="e#923#2558#0#PHP" expanded="false" />
-            <element signature="e#6735#7512#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -404,13 +398,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1113">
-          <caret line="232" column="4" lean-forward="false" selection-start-line="232" selection-start-column="4" selection-end-line="232" selection-end-column="4" />
+        <state relative-caret-position="353">
+          <caret line="125" column="66" lean-forward="false" selection-start-line="125" selection-start-column="66" selection-end-line="125" selection-end-column="66" />
           <folding>
             <element signature="e#40#69#0#PHP" expanded="true" />
             <element signature="e#586#872#0#PHP" expanded="false" />
             <element signature="e#923#2558#0#PHP" expanded="false" />
-            <element signature="e#6735#7512#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
