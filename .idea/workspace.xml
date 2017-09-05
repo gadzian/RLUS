@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08fa759f-e47c-4b49-a893-17cc0c69fdcf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/cleartable.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/new2.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/new2.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Matches.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Matches.php" />
     </list>
@@ -47,8 +50,8 @@
       <file leaf-file-name="Matches.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Matches.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="360">
+              <caret line="47" column="7" lean-forward="false" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -57,13 +60,13 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="168" column="4" lean-forward="true" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+            <state relative-caret-position="1113">
+              <caret line="232" column="4" lean-forward="false" selection-start-line="232" selection-start-column="4" selection-end-line="232" selection-end-column="4" />
               <folding>
                 <element signature="e#40#69#0#PHP" expanded="true" />
-                <element signature="e#527#813#0#PHP" expanded="false" />
-                <element signature="e#864#2499#0#PHP" expanded="false" />
-                <element signature="e#2554#4758#0#PHP" expanded="false" />
+                <element signature="e#586#872#0#PHP" expanded="false" />
+                <element signature="e#923#2558#0#PHP" expanded="false" />
+                <element signature="e#6735#7512#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -72,8 +75,8 @@
       <file leaf-file-name="new2.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/default/new2.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="81" selection-end-column="6" />
+            <state relative-caret-position="553">
+              <caret line="98" column="20" lean-forward="false" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -90,11 +93,12 @@
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Teams.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/default/new2.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/new.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Matchdays.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Matches.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/MatchDays.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/cleartable.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/new2.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Matches.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
       </list>
     </option>
@@ -108,7 +112,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="1649" />
-    <option name="y" value="8" />
+    <option name="y" value="45" />
     <option name="width" value="1383" />
     <option name="height" value="834" />
   </component>
@@ -227,15 +231,15 @@
       <option name="presentableId" value="Default" />
       <updated>1504509562908</updated>
       <workItem from="1504509564126" duration="12906000" />
-      <workItem from="1504595995790" duration="5472000" />
+      <workItem from="1504595995790" duration="14127000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18378000" />
+    <option name="totallyTimeSpent" value="27033000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1649" y="8" width="1383" height="834" extended-state="0" />
+    <frame x="1649" y="45" width="1383" height="834" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23189466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -314,9 +318,9 @@
           <caret line="129" column="31" lean-forward="true" selection-start-line="129" selection-start-column="31" selection-end-line="129" selection-end-column="31" />
           <folding>
             <element signature="e#40#69#0#PHP" expanded="true" />
-            <element signature="e#527#813#0#PHP" expanded="false" />
-            <element signature="e#864#2499#0#PHP" expanded="false" />
-            <element signature="e#2554#4758#0#PHP" expanded="false" />
+            <element signature="e#586#872#0#PHP" expanded="false" />
+            <element signature="e#923#2558#0#PHP" expanded="false" />
+            <element signature="e#6735#7512#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -339,22 +343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/new2.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="81" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -382,23 +370,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/cleartable.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Matches.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="360">
+          <caret line="47" column="7" lean-forward="false" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/new2.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="98" column="20" lean-forward="false" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="168" column="4" lean-forward="true" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+        <state relative-caret-position="1113">
+          <caret line="232" column="4" lean-forward="false" selection-start-line="232" selection-start-column="4" selection-end-line="232" selection-end-column="4" />
           <folding>
             <element signature="e#40#69#0#PHP" expanded="true" />
-            <element signature="e#527#813#0#PHP" expanded="false" />
-            <element signature="e#864#2499#0#PHP" expanded="false" />
-            <element signature="e#2554#4758#0#PHP" expanded="false" />
+            <element signature="e#586#872#0#PHP" expanded="false" />
+            <element signature="e#923#2558#0#PHP" expanded="false" />
+            <element signature="e#6735#7512#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>

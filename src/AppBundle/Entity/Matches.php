@@ -30,13 +30,21 @@ class Matches
      */
     protected $home;
     /**
+     * @ORM\Column(type="integer")
+     */
+    protected $homeID;
+    /**
+     * @ORM\Column(type="integer")
+     */
+    protected $homeG;
+    /**
      * @ORM\Column(type="string", length=100)
      */
     protected $away;
     /**
      * @ORM\Column(type="integer")
      */
-    protected $homeG;
+    protected $awayID;
     /**
      * @ORM\Column(type="integer")
      */
@@ -213,5 +221,53 @@ class Matches
     public function getOt()
     {
         return $this->ot;
+    }
+
+    /**
+     * Set homeID
+     *
+     * @param integer $homeID
+     *
+     * @return Matches
+     */
+    public function setHomeID($homeID)
+    {
+        $this->homeID = $homeID;
+
+        return $this;
+    }
+
+    /**
+     * Get homeID
+     *
+     * @return integer
+     */
+    public function getHomeID()
+    {
+        return $this->homeID;
+    }
+
+    /**
+     * Set awayID
+     *
+     * @param integer $awayID
+     *
+     * @return Matches
+     */
+    public function setAwayID($awayID)
+    {
+        $this->awayID = $awayID;
+
+        return $this;
+    }
+
+    /**
+     * Get awayID
+     *
+     * @return integer
+     */
+    public function getAwayID()
+    {
+        return $this->awayID;
     }
 }

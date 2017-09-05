@@ -4,6 +4,7 @@ namespace AppBundle\Controller;
 
 use AppBundle\Entity\Matches;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Form\Extension\Core\Type\ButtonType;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -122,18 +123,52 @@ class DefaultController extends Controller
 
     public function showAction()
     {
-        $em = $this->getDoctrine()->getRepository("AppBundle:Matches");
+        $em = $this->getDoctrine()->getRepository("AppBundle:Teams");
         $records = $em->findAll();//findBy(array(), array('points' => 'DESC', 'goals' => 'DESC'));
 
         echo "<pre>";
         var_dump($records);
         echo "<hr>";
-        $home = $em->find('1');
+        //$home = $em->find('1');
         //echo $home->getHome();
 
 
         return new Response();
     }
+
+    /**
+     * @Route("/cleartable")
+     */
+    public function clearTable()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $records = $em->getRepository('AppBundle:Teams')->findAll();
+
+        foreach ($records as $element)
+        {
+            $element->setName("Lech Poznan");
+            $element->setMatches(0);
+            $element->setWon(0);
+            $element->setOtwon(0);
+            $element->setOtlost(0);
+            $element->setLost(0);
+            $element->setGoals(0);
+            $element->setGoalsagainst(0);
+            $element->setGoalsdiff(0);
+            $element->setPoints(0);
+
+            $em->persist($element);
+            $em->flush();
+
+        }
+
+
+        return new Response();
+
+    }
+
+
+
 
     /**
      * @Route("/creatematch")
@@ -146,6 +181,8 @@ class DefaultController extends Controller
         //$em = $this->getDoctrine()->get
         $match = new Matches();
         $match->setId(1);
+        $match->setHomeID(1);
+        $match->setAwayID(2);
         $match->setHome($em->find('1')->getName());
         $match->setAway($em->find('2')->getName());
         $match->setMatchday(1);
@@ -163,9 +200,38 @@ class DefaultController extends Controller
     /**
      * @Route("/updatematch/{count}")
      */
+    public function updateMatchAction($count)
+    {
+        $em = $this->getDoctrine()->getRepository("AppBundle:Teams");
+        $en = $this->getDoctrine()->getManager();
+        $match = $en->getRepository('AppBundle:Matches')->find($count);
+
+        if (!$match) {
+            throw $this->createNotFoundException(
+                'No product found for id '.$count
+            );
+        }
+
+        $match->setId(1);
+        $match->setHome($em->find('1')->getName());
+        $match->setAway($em->find('2')->getName());
+        $match->setMatchday(1);
+        $match->setHomeG(3);
+        $match->setAwayG(5);
+        $match->setOt(0);
+
+        $en = $this->getDoctrine()->getManager();
+        $en->persist($match);
+        $en->flush();
+
+        return new Response();
+
+    }
 
 
 
     
+
+
 
 }
