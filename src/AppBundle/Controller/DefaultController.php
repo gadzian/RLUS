@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Matches;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -121,22 +122,50 @@ class DefaultController extends Controller
 
     public function showAction()
     {
-        $em = $this->getDoctrine()->getRepository("AppBundle:Teams");
-        $records = $em->findBy(array(), array('points' => 'DESC', 'goals' => 'DESC'));
+        $em = $this->getDoctrine()->getRepository("AppBundle:Matches");
+        $records = $em->findAll();//findBy(array(), array('points' => 'DESC', 'goals' => 'DESC'));
 
         echo "<pre>";
         var_dump($records);
         echo "<hr>";
         $home = $em->find('1');
-        echo $home->getName();
+        //echo $home->getHome();
 
 
         return new Response();
     }
 
+    /**
+     * @Route("/creatematch")
+     */
+    public function createMatchAction()
+    {
+        $em = $this->getDoctrine()->getRepository("AppBundle:Teams");
+
+
+        //$em = $this->getDoctrine()->get
+        $match = new Matches();
+        $match->setId(1);
+        $match->setHome($em->find('1')->getName());
+        $match->setAway($em->find('2')->getName());
+        $match->setMatchday(1);
+        $match->setHomeG(3);
+        $match->setAwayG(5);
+        $match->setOt(0);
+
+        $en = $this->getDoctrine()->getManager();
+        $en->persist($match);
+        $en->flush();
+
+        return new Response();
+    }
+
+    /**
+     * @Route("/updatematch/{count}")
+     */
 
 
 
-
+    
 
 }

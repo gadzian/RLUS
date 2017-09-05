@@ -42,8 +42,176 @@ class Matches
      */
     protected $awayG;
     /**
-     * @ORM\Column(type="bool")
+     * @ORM\Column(type="integer")
      */
     protected $ot;
 
+
+    /**
+     * Set id
+     *
+     * @param integer $id
+     *
+     * @return Matches
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set matchday
+     *
+     * @param integer $matchday
+     *
+     * @return Matches
+     */
+    public function setMatchday($matchday)
+    {
+        $this->matchday = $matchday;
+
+        return $this;
+    }
+
+    /**
+     * Get matchday
+     *
+     * @return integer
+     */
+    public function getMatchday()
+    {
+        return $this->matchday;
+    }
+
+    /**
+     * Set home
+     *
+     * @param string $home
+     *
+     * @return Matches
+     */
+    public function setHome($home)
+    {
+        $this->home = $home;
+
+        return $this;
+    }
+
+    /**
+     * Get home
+     *
+     * @return string
+     */
+    public function getHome()
+    {
+        return $this->home;
+    }
+
+    /**
+     * Set away
+     *
+     * @param string $away
+     *
+     * @return Matches
+     */
+    public function setAway($away)
+    {
+        $this->away = $away;
+
+        return $this;
+    }
+
+    /**
+     * Get away
+     *
+     * @return string
+     */
+    public function getAway()
+    {
+        return $this->away;
+    }
+
+    /**
+     * Set homeG
+     *
+     * @param integer $homeG
+     *
+     * @return Matches
+     */
+    public function setHomeG($homeG)
+    {
+        $this->homeG = $homeG;
+
+        return $this;
+    }
+
+    /**
+     * Get homeG
+     *
+     * @return integer
+     */
+    public function getHomeG()
+    {
+        return $this->homeG;
+    }
+
+    /**
+     * Set awayG
+     *
+     * @param integer $awayG
+     *
+     * @return Matches
+     */
+    public function setAwayG($awayG)
+    {
+        $this->awayG = $awayG;
+
+        return $this;
+    }
+
+    /**
+     * Get awayG
+     *
+     * @return integer
+     */
+    public function getAwayG()
+    {
+        return $this->awayG;
+    }
+
+    /**
+     * Set ot
+     *
+     * @param integer $ot
+     *
+     * @return Matches
+     */
+    public function setOt($ot)
+    {
+        $this->ot = $ot;
+
+        return $this;
+    }
+
+    /**
+     * Get ot
+     *
+     * @return integer
+     */
+    public function getOt()
+    {
+        return $this->ot;
+    }
 }
